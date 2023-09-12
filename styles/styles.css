@@ -1,6 +1,23 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+header, footer {
+  background: linear-gradient(
+    #350a06,
+    #56070c,
+    #8f3d38
+);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+header h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
 
 .calendar {
   width: 300px;

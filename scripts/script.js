@@ -70,3 +70,7 @@ eventDetails.querySelector("#backBtn").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+/* Footer */
+const currentYear = new Date().getFullYear();
+document.getElementById("current-year").textContent = currentYear;
