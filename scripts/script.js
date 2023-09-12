@@ -1,9 +1,9 @@
 const monthYearElement = document.getElementById("monthYear");
-const daysContainer = document.querySelector(".days");
-const eventCard = document.querySelector(".event-card");
+const daysContainer = document.getElementById("daysContainer");
+const eventCard = document.getElementById("eventCard");
 const eventDateElement = document.getElementById("eventDate");
 const eventListElement = document.getElementById("eventList");
-const eventDetails = document.querySelector(".event-details");
+const eventDetails = document.getElementById("eventDetails");
 const eventTitleElement = document.getElementById("eventTitle");
 const eventDescriptionElement = document.getElementById("eventDescription");
 
