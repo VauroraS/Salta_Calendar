@@ -4,6 +4,17 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  min-height: 100vh; /* Asegura que el contenido cubra al menos toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column; /* Permite que el footer se quede en la parte inferior */
+}
+
+/* Contenido Principal */
+main {
+  flex-grow: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+  max-width: 1140px; /* Limite Pantallas XL */
+  margin: 1rem auto; /* root EM (Ancho de "M" en la Raiz HTML) */
+  padding: .5rem;
 }
 
 header, footer {
@@ -22,7 +33,7 @@ header h1 {
   justify-content: center;
   gap: 8px;
   padding: 8px;
-  background-color: #a87bc7;
+  background: #a87bc7;
   list-style: none;
 }
 
@@ -70,7 +81,8 @@ header h1 {
   background-color: #f0f0f0;
 }
 
-.event-card, .event-details {
+.event-card,
+.event-details {
   display: none;
   width: 300px;
   border: 1px solid #ccc;
@@ -84,3 +96,10 @@ header h1 {
   background-color: lightgray;
 }
 
+/* Estilo para el footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

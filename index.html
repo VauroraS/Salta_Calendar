@@ -21,36 +21,38 @@
     </ul>
 
     <!-- Contenido Principal -->
-    <div class="calendar">
-        <div class="header">
-            <button id="prevBtn">&lt;</button>
-            <h2 id="monthYear"></h2>
-            <button id="nextBtn">&gt;</button>
+    <main>
+        <div class="calendar">
+            <div class="header">
+                <button id="prevBtn">&lt;</button>
+                <h2 id="monthYear"></h2>
+                <button id="nextBtn">&gt;</button>
+            </div>
+    
+            <div class="days" id="daysContainer"></div>
+    
+            <div class="event-card" id="eventCard">
+                <button id="closeBtn">Cerrar</button>
+                <h3 id="eventDate"></h3>
+                <ul id="eventList">
+                    <li>Evento 1</li>
+                    <li>Evento 2</li>
+                </ul>
+            </div>
+    
+            <div class="event-details" id="eventDetails">
+                <button id="backBtn">Atrás</button>
+                <h3 id="eventTitle"></h3>
+                <p id="eventDescription"></p>
+            </div>
         </div>
 
-        <div class="days" id="daysContainer"></div>
-
-        <div class="event-card" id="eventCard">
-            <button id="closeBtn">Cerrar</button>
-            <h3 id="eventDate"></h3>
-            <ul id="eventList">
-                <li>Evento 1</li>
-                <li>Evento 2</li>
-            </ul>
-        </div>
-
-        <div class="event-details" id="eventDetails">
-            <button id="backBtn">Atrás</button>
-            <h3 id="eventTitle"></h3>
-            <p id="eventDescription"></p>
-        </div>
-    </div>
+    </main>
+    
     <!-- Pie de Pagina -->
     <footer>
         <p>&copy; Shining Pink <span id="current-year"></span></p>
     </footer>
-
-
     <script src="scripts/script.js"></script>
 </body>
 </html>
