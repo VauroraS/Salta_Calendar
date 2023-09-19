@@ -13,10 +13,10 @@
 
     <nav> <!-- Navegacion -->
       <ul class="menu">
-          <li><a href="#" class="active">Calendario</a></li>
+          <li><a href="/index.html">Calendario</a></li>
           <li><a href="/templates/lugares.html">Lugares</a></li>
           <li><a href="templates/recomendaciones.html">Recomendaciones</a></li>
-          <li><a href="templates/contacto.html">Contacto</a></li>
+          <li><a href="#" class="active">Contacto</a></li>
       </ul>
     </nav>
    
@@ -33,9 +33,9 @@
             <h2><strong>CONTACTO</strong></h2>
   
             <label for="nombre">Escribe tu nombre</label>
-            <input type="text" id="nombre" class="box" name="name" />
+            <input type="text" id="nombre" class="box" name="name" required />
             <label for="correo">Escribe tu correo</label>
-            <input type="email" id="correo" class="box" name="email" />
+            <input type="email" id="correo" class="box" name="email" required />
             <label for="mensaje">Escribe tu mensaje</label>
             <textarea
               class="box"
@@ -43,6 +43,7 @@
               cols="30"
               rows="10"
               name="message"
+              required
             ></textarea>
             <input type="submit" value="Enviar" class="submit" id="submit" />
           </form>
@@ -90,7 +91,7 @@
     <footer>
           <p>&copy; Shining Pink <span id="current-year"></span></p>
     </footer>
-    <script src="/scripts/script.js"></script>
+    <script src="/scripts/contacto.js"></script>
     
 </body>
 </html>

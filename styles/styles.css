@@ -16,6 +16,7 @@ main {
   padding: .5rem;
 }
 header {
+  padding: 25px;
   background-image: url("/assets/Header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,6 +57,12 @@ header h1 {
   align-items: center;
   margin-bottom: 10px;
 }
+.header button{
+  background-color:palevioletred;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #3E215D;
+}
 /* Estilo para el contenido principal */
 main {
   display: flex; /* Utiliza un contenedor flexible */
@@ -76,6 +83,7 @@ main {
   padding: 20px; /* Espaciado interior */
   border: 1px solid #ccc; /* Borde para el calendario */
   margin: 50px;
+  color: #3E215D;
 }
 
 .days {
@@ -95,7 +103,7 @@ main {
 }
 
 .day:hover {
-  background-color: #f0f0f0;
+  background-color:palevioletred;
 }
 
 .event-card,
