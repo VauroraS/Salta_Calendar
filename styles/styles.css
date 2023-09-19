@@ -7,7 +7,7 @@ body {
   min-height: 100vh; /* Asegura que el contenido cubra al menos toda la altura de la pantalla */
   display: flex;
   flex-direction: column; /* Permite que el footer se quede en la parte inferior */
-  background-color:#f5f5ec ;
+  background-color:#f5f5ec;
 }
 /* Contenido Principal */
 main {
@@ -45,6 +45,7 @@ header h1 {
 .menu a {
   color: #f6f1f1;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .menu a.active,
@@ -85,6 +86,7 @@ main {
   border: 1px solid #ccc; /* Borde para el calendario */
   margin: 50px;
   color: #3E215D;
+  background-color: white;
 }
 
 .days {
@@ -113,9 +115,9 @@ main {
   width: 300px;
   border: 1px solid #ccc;
   padding: 10px;
-  position: absolute;
+  position: relative;
   background-color: white;
-  z-index: 2;
+  z-index: 1;
 }
 
 .event-details {
