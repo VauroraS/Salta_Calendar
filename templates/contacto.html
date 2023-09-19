@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/contacto.css">
+    <title>Contacto</title>
+    
 </head>
 <body>
+  <header>
+    <h1>Salta Calendar</h1>
+
+    <nav> <!-- Navegacion -->
+      <ul class="menu">
+          <li><a href="#" class="active">Calendario</a></li>
+          <li><a href="/templates/lugares.html">Lugares</a></li>
+          <li><a href="templates/recomendaciones.html">Recomendaciones</a></li>
+          <li><a href="templates/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+   
+    
+  </header>
+  <main>
+      <div class="contacto" id="contacto">
+        <div class="container-contacto">
+          <form id="myform"
+            class="myform"
+            action="https://formspree.io/f/xnqyoljo"
+            method="POST"
+          >
+            <h2><strong>CONTACTO</strong></h2>
+  
+            <label for="nombre">Escribe tu nombre</label>
+            <input type="text" id="nombre" class="box" name="name" />
+            <label for="correo">Escribe tu correo</label>
+            <input type="email" id="correo" class="box" name="email" />
+            <label for="mensaje">Escribe tu mensaje</label>
+            <textarea
+              class="box"
+              id="mensaje"
+              cols="30"
+              rows="10"
+              name="message"
+            ></textarea>
+            <input type="submit" value="Enviar" class="submit" id="submit" />
+          </form>
+          <div class="info">
+            <img src="/assets/info.svg" class="img-1" alt="" />
+            <div class="location">
+              <div class="icons">
+                <img src="/assets/gps.svg" alt="" />
+                <p>Buenos Aires 93, Salta</p>
+              </div>
+              <div class="icons">
+                <img src="/assets/number.svg" alt="" />
+                <p>+54 387 4310950</p>
+              </div>
+              <div class="icons">
+                <img src="/assets/email.svg" alt="" />
+                <p>informes@turismosalta.gov.ar</p>
+              </div>
+            </div>
+            <div class="social">
+              <a
+                href="https://www.instagram.com/visitsalta/"
+                target="_blank"
+              >
+                <img src="/assets/ins.svg" alt="Logo de Instagram" />
+              </a>
+              <a
+                href="https://www.facebook.com/Visit.Salta"
+                target="_blank"
+              >
+                <img src="/assets/fa.svg" alt="Logo de Facebook" />
+              </a>
+              <a
+              href="https://twitter.com/SaltaVisit"
+              target="_blank"
+            >
+              <img src="/assets/tw.svg" alt="Logo de Twitter" />
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+        <!-- Pie de Pagina -->
+    <footer>
+          <p>&copy; Shining Pink <span id="current-year"></span></p>
+    </footer>
+    <script src="/scripts/script.js"></script>
     
 </body>
 </html>
