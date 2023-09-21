@@ -25,3 +25,6 @@ $("#myform").submit(function (event) {
     },
   });
 });
+/* Footer */
+const currentYear = new Date().getFullYear();
+document.getElementById("current-year2").textContent = currentYear;
