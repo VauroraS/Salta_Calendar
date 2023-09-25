@@ -171,16 +171,19 @@ section {
 }
 
 /* Estilo para el footer */
+/* Estilo para el footer */
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: url("/assets/Header.jpg");
+  background-image: url("assets/Header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 50px; /* Ajusta el padding según tus necesidades */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
