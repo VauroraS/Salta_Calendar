@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Poppins Regular";
-  src: url(/Fuentes/Poppins-Regular.ttf);
+  src: url(Fuentes/Poppins-Regular.ttf);
 }
 @font-face {
   font-family: "Poppins Thin";
-  src: url(/Fuentes/Poppins-Thin.ttf);
+  src: url(Fuentes/Poppins-Thin.ttf);
 }
 body {
   font-family: Arial, sans-serif;
@@ -16,7 +16,7 @@ body {
 }
 header {
   padding: 25px;
-  background-image: url("/assets/Header.jpg");
+  background-image: url("assets/Header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -171,7 +171,7 @@ header h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: url("/assets/Header.jpg");
+  background-image: url("assets/Header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
