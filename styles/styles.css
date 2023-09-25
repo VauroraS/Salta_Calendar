@@ -8,18 +8,19 @@ body {
   min-height: 100vh; /* Asegura que el contenido cubra al menos toda la altura de la pantalla */
   display: flex;
   flex-direction: column; /* Permite que el footer se quede en la parte inferior */
-  background-color:#f5f5ec;
+  background-color: #f5f5ec;
 }
-/* Contenido Principal */
-main {
-  flex-grow: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+
+main{
   max-width: 1140px; /* Limite Pantallas XL */
   margin: 1rem auto; /* root EM (Ancho de "M" en la Raiz HTML) */
   padding: .5rem;
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
 }
 header {
   padding: 25px;
-  background-image: url("assets/Header.jpg");
+  background-image: url("/assets/Header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -67,11 +68,6 @@ header h1 {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #3E215D;
-}
-/* Estilo para el contenido principal */
-main {
-  display: flex; /* Utiliza un contenedor flexible */
-  justify-content: space-between; /* Distribuye el espacio entre los elementos */
 }
 
 /* Estilo para el formulario */
@@ -171,19 +167,16 @@ section {
 }
 
 /* Estilo para el footer */
-/* Estilo para el footer */
 footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: url("assets/Header.jpg");
+  background-image: url("/assets/Header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   color: white;
   text-align: center;
-  padding: 50px; /* Ajusta el padding según tus necesidades */
+  padding: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+  }
 
