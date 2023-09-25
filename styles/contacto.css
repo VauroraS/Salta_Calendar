@@ -92,6 +92,13 @@ header h1 {
     color: #969eae;
     margin-bottom: 25px;
   }
+  .myform input{
+    border-radius: 7px;
+  }
+  .myform textarea{
+    border-radius: 7px;
+  }
+
   .contacto label {
     font-family: "Poppins Regular", serif;
     font-size: 15px;

@@ -19,7 +19,7 @@ main {
 }
 header {
   padding: 25px;
-  background-image: url("/assets/Header.jpg");
+  background-image: url("../assets/Header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
