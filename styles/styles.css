@@ -1,48 +1,48 @@
 
 /* styles.css */
-
+@import url(/styles/dpto.css);
+*{
+  font-family: Poppins;
+  margin: 0%;
+  padding: 0%;
+}
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  min-height: 100vh; /* Asegura que el contenido cubra al menos toda la altura de la pantalla */
   display: flex;
   flex-direction: column; /* Permite que el footer se quede en la parte inferior */
   background-color: #f5f5ec;
 }
 
 main{
-  max-width: 1140px; /* Limite Pantallas XL */
   margin: 1rem auto; /* root EM (Ancho de "M" en la Raiz HTML) */
   padding: .5rem;
   display: flex;
   justify-content: space-between; /* Distribuye el espacio entre los elementos */
 }
-header {
+header{
   padding: 25px;
-  background-image: url("/assets/Header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 20vh; /* Ajusta la altura según tus necesidades */
-}
-header h1 {
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  align-items: center; /* Centra verticalmente los elementos */
-  margin-left: 30px;
+  background-color: #557654;
+  height: 70px; 
 }
 
+.logo{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-right: 150px;
+}
 /* Estilo para el menú */
 .menu {
   color: #fff;
   padding: 25px;
   display: flex;
-  justify-content: flex-end; /* Alinea los elementos en el extremo derecho */
+  justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
   flex-shrink: 0;
   list-style: none;
+  margin: 0;
 }
 
 .menu a {
@@ -54,7 +54,9 @@ header h1 {
 
 .menu a.active,
 .menu a:hover {
-  text-shadow: 0 0 4px;
+  text-shadow: 0 0 2px #57364E;
+  color: #57364E;
+  font-weight: 600;
 }
 
 .header {
@@ -64,65 +66,50 @@ header h1 {
   margin-bottom: 10px;
 }
 .header button{
-  background-color:palevioletred;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #3E215D;
+  background-color: rgba(85, 118, 84, 0.80);
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #557654;
 }
 
 /* Estilo para el formulario */
 .formulario {
   width: 30%; /* Ancho del formulario */
   padding: 20px; /* Espaciado interior */
-  border: 1px solid #ccc; /* Borde para el formulario */
   margin: 50px;
 }
 
 /* Estilo para el calendario */
 .calendar {
-  width: 65%; /* Ancho del calendario */
-  padding: 20px; /* Espaciado interior */
-  border: 1px solid #ccc; /* Borde para el calendario */
-  margin: 50px;
-  color: #3E215D;
-  background-color: white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 70%; /* Ancho del calendario */
+  padding: 10px; /* Espaciado interior */
+  margin: 20px;
+  color: #57364E;
 }
 
 .days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
+  gap: 10px;
 }
 
 .day {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ccc;
+  width: 60px;
+  height: 60px;
+  border-radius: 7px;
+  border: 1px solid #557654;
+  color: #FFF;
+  background-color: rgba(85, 118, 84, 0.80);
   cursor: pointer;
 }
 
 .day:hover {
-  background-color:palevioletred;
+  background-color:#57364E;
 }
 
-.event-card,
-.event-details {
-  display: none;
-  width: 300px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  position: relative;
-  background-color: white;
-  z-index: 1;
-}
-
-.event-details {
-  background-color: lightgray;
-}
 h2 {
   margin: 30px;
 }
@@ -132,10 +119,8 @@ section {
 }
 
 .formulario {
-  background-color: #fff;
-  border-radius: 5px;
   width: 500px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin-top: 100px;
 }
 
 .form {
@@ -145,16 +130,16 @@ section {
 
 .form-element {
   position: relative;
-  margin: 5px;
-  color: #3E215D;
+  margin: 10px;
+  color: #557654;
 }
 
 .input {
   position: relative;
   padding: 7px;
   border: none;
-  border: 1px solid #3E215D;
-  border-radius: 7px;
+  border: 1px solid #557654;
+  border-radius: 10px;
   outline: none;
   font-size: 16px;
   width: 480px;
@@ -166,17 +151,75 @@ section {
   color: #888;
 }
 
+.btn{
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid #57364E;
+  margin: 40px 0px 10px 10px;
+  width: 495px;
+  height: 50px;
+  padding: 22px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: #57364E;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.event-card{
+  width: 650px;
+  height: 300px;
+  border-radius: 30px;
+  border: 5px solid #557654;
+  background: #57364E;
+  margin: 0 auto;
+  padding: 30px;
+  color: #FFF;
+  font-size: 18px;
+  display: flex;
+}
+
+.info{
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.fecha{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.map{
+  width: 300px;
+  height: 300px;
+  border: 1px solid #57364E;
+  border-radius: 10px;
+}
+
+.btn-close{
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: #57364E;
+  border: 0;
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
 /* Estilo para el footer */
 footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-image: url("/assets/Header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  background-color: #557654;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 25px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 10%;
   }
-
