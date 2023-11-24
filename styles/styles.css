@@ -109,22 +109,6 @@ header{
   background-color:#57364E;
 }
 
-.event-card{
-  display: flex;
-  width: 700px;
-  height: 50px;
-  padding: 25px 114px 25px 124px;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 80px;
-  border-radius: 30px;
-  border: 1px solid #557654;
-  background: rgba(85, 118, 84, 0.80);
-  margin: 0 auto;
-  color: #f5f5ec;
-  font-size: 20px;
-}
-
 h2 {
   margin: 30px;
 }
@@ -180,28 +164,12 @@ section {
   font-size: 16px;
   background-color: #57364E;
   color: #FFF;
-  
-}
-
-.btn-card{
-  display: flex;
-  width: 150px;
-  height: 60px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border-radius: 30px;
-  border: 1px solid #57364E;
-  background: #57364E;
-  color: #FFF;
-  font-size: 18px;
   cursor: pointer;
 }
 
-.tarjeta-evento{
-  width: 700px;
-  height: 350px;
+.event-card{
+  width: 650px;
+  height: 300px;
   border-radius: 30px;
   border: 5px solid #557654;
   background: #57364E;
@@ -213,9 +181,11 @@ section {
 }
 
 .info{
+  padding: 10px;
   width: 50%;
-  display: block;
-  gap: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
 }
 
 .fecha{
@@ -224,6 +194,24 @@ section {
   width: 50%;
 }
 
+.map{
+  width: 300px;
+  height: 300px;
+  border: 1px solid #57364E;
+  border-radius: 10px;
+}
+
+.btn-close{
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: #57364E;
+  border: 0;
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
 /* Estilo para el footer */
 footer {
 

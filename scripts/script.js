@@ -3,7 +3,6 @@ const daysContainer = document.getElementById("daysContainer");
 const eventCard = document.getElementById("eventCard");
 const eventDateElement = document.getElementById("eventDate");
 const eventListElement = document.getElementById("eventList");
-
 const eventTitleElement = document.getElementById("eventTitle");
 const eventDescriptionElement = document.getElementById("eventDescription");
 
@@ -15,7 +14,7 @@ function renderCalendar() {
     const lastDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
     const daysInMonth = lastDayOfMonth.getDate();
     const startDayIndex = firstDayOfMonth.getDay();
-    eventCard.style.display="none";
+    eventCard.style.display = "none";
     monthYearElement.textContent = `${currentDate.toLocaleString('default', { month: 'long' })} ${currentDate.getFullYear()}`;
 
     daysContainer.innerHTML = "";
@@ -36,29 +35,12 @@ function renderCalendar() {
 }
 
 function showEventCard(day) {
-    //selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
-    let opcion = document.createElement("div");
+    let event = document.createElement("div");
     eventCard.style.display = "flex";
-    opcion.innerHTML(eventCard);
-    document.appendChild(opcion);
-    let btnCard = document.getElementById("btnCard");
-    btnCard.addEventListener("click", () => showEvent(opcion));
+    event.innerHTML = eventCard;
+    document.appendChild(event);  
+    document.getElementById("btnClose").addEventListener("click", () => event.style.display="none");
 }
-
-function showEvent (opcion){
-    let evento = document.createElement("div");
-    
-    
-    
-}
-
-/*function showEventDetails(eventTitle, eventDescription) {
-    eventTitleElement.textContent = eventTitle;
-    eventDescriptionElement.textContent = eventDescription;
-
-    eventDetails.style.display = "block";
-    eventCard.style.display = "none";
-}*/
 
 document.getElementById("prevBtn").addEventListener("click", () => {
     currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
@@ -69,15 +51,6 @@ document.getElementById("nextBtn").addEventListener("click", () => {
     currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1);
     renderCalendar();
 });
-
-
-/*eventCard.querySelector("#closeBtn").addEventListener("click", () => {
-    eventCard.style.display = "none";
-});
-
-eventDetails.querySelector("#backBtn").addEventListener("click", () => {
-    eventDetails.style.display = "none";
-});*/
 
 renderCalendar();
 
