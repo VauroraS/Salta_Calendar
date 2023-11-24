@@ -3,7 +3,6 @@ const daysContainer = document.getElementById("daysContainer");
 const eventCard = document.getElementById("eventCard");
 const eventDateElement = document.getElementById("eventDate");
 const eventListElement = document.getElementById("eventList");
-const eventDetails = document.getElementById("eventDetails");
 const eventTitleElement = document.getElementById("eventTitle");
 const eventDescriptionElement = document.getElementById("eventDescription");
 
@@ -15,7 +14,7 @@ function renderCalendar() {
     const lastDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
     const daysInMonth = lastDayOfMonth.getDate();
     const startDayIndex = firstDayOfMonth.getDay();
-
+    eventCard.style.display = "none";
     monthYearElement.textContent = `${currentDate.toLocaleString('default', { month: 'long' })} ${currentDate.getFullYear()}`;
 
     daysContainer.innerHTML = "";
@@ -36,19 +35,11 @@ function renderCalendar() {
 }
 
 function showEventCard(day) {
-    selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
-    eventDateElement.textContent = selectedDate.toDateString();
-    eventListElement.innerHTML = "<li>Evento 1</li><li>Evento 2</li>"; // Aquí podrías cargar los eventos reales
-
-    eventCard.style.display = "block";
-}
-
-function showEventDetails(eventTitle, eventDescription) {
-    eventTitleElement.textContent = eventTitle;
-    eventDescriptionElement.textContent = eventDescription;
-
-    eventDetails.style.display = "block";
-    eventCard.style.display = "none";
+    let event = document.createElement("div");
+    eventCard.style.display = "flex";
+    event.innerHTML = eventCard;
+    document.appendChild(event);  
+    document.getElementById("btnClose").addEventListener("click", () => event.style.display="none");
 }
 
 document.getElementById("prevBtn").addEventListener("click", () => {
@@ -61,16 +52,9 @@ document.getElementById("nextBtn").addEventListener("click", () => {
     renderCalendar();
 });
 
-eventCard.querySelector("#closeBtn").addEventListener("click", () => {
-    eventCard.style.display = "none";
-});
-
-eventDetails.querySelector("#backBtn").addEventListener("click", () => {
-    eventDetails.style.display = "none";
-});
-
 renderCalendar();
 
 /* Footer */
 const currentYear = new Date().getFullYear();
 document.getElementById("current-year").textContent = currentYear;
+

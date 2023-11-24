@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Calendario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Salta Calendar</title>
 </head>
 <body>    
     <!-- Cabecera de Pagina -->
     <header>
-        <h1>Salta Calendar</h1>
-
         <nav> <!-- Navegacion -->
+          
           <ul class="menu">
+              <div class="logo">
+                <img src="/assets/iconos/saltacalendar_logo.png" alt="saltacalendar_logo" class="icono">
+                <h1>Salta Calendar</h1>
+              </div>
               <li><a href="#" class="active">Calendario</a></li>
               <li><a href="templates/lugares.html">Lugares</a></li>
               <li><a href="templates/recomendaciones.html">Recomendaciones</a></li>
@@ -22,6 +28,15 @@
     </header>
     <!-- Contenido Principal -->
     <main>
+      <div class="calendar">
+        <div class="header">
+            <button id="prevBtn">&lt;</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextBtn">&gt;</button>
+        </div>
+
+        <div class="days" id="daysContainer"></div>   
+    </div>
         <div class="formulario">
             <form class="form">
               <div class="form-element">
@@ -93,34 +108,29 @@
                 </datalist>
               </div>
             </form>
-      
+            <button class="btn">Buscar</button>
           </div>
-        <div class="calendar">
-            <div class="header">
-                <button id="prevBtn">&lt;</button>
-                <h2 id="monthYear"></h2>
-                <button id="nextBtn">&gt;</button>
-            </div>
-    
-            <div class="days" id="daysContainer"></div>
-    
-            <div class="event-card" id="eventCard">
-                <button id="closeBtn">Cerrar</button>
-                <h3 id="eventDate"></h3>
-                <ul id="eventList">
-                    <li>Evento 1</li>
-                    <li>Evento 2</li>
-                </ul>
-            </div>
-    
-            <div class="event-details" id="eventDetails">
-                <button id="backBtn">Atrás</button>
-                <h3 id="eventTitle"></h3>
-                <p id="eventDescription"></p>
-            </div>
-        </div>
+        
         
     </main>
+    <div class="event-card" id="eventCard">
+      <div class="info" id="info">
+        <p>Titulo</p>
+        <div class="fecha" id="fecha">
+          <p>23/11/23</p>
+          <p>20:00</p>
+        </div>
+        <p>Direccion 123</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+        <iframe 
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18083.05659949107!2d-65.41361046480203!3d-24.79112359271394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3bcaa4146a5%3A0x5858d5a81b90c139!2sPlaza%209%20de%20Julio!5e0!3m2!1ses-419!2sar!4v1700838392441!5m2!1ses-419!2sar"
+        allowfullscreen="" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <button class="btn-close" id="btnClose">X</button>
+  </div>
     <!-- Pie de Pagina -->
     <footer>
         <p>&copy; Created by Shining Pink <span id="current-year"></span></p>
