@@ -43,7 +43,7 @@ h2{
     align-items: center;
 }
 
-.caracteristicas{
+.caracteristicas, .card-conteiner{
     display: flex;
     gap: 20px;
     padding: 10px;
@@ -65,6 +65,20 @@ h2{
     font-weight: 600;
     font-family: Poppins;
     cursor: pointer;
+}
+
+.card-conteiner {
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    height: auto;
+}
+
+.card-conteiner img {
+    width: 100%;
+    border-radius: 30px;
 }
 
 .icono{
