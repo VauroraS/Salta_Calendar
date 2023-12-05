@@ -1,3 +1,4 @@
+/* Elementos del calendario */
 const monthYearElement = document.getElementById("monthYear");
 const daysContainer = document.getElementById("daysContainer");
 const eventCard = document.getElementById("eventCard");
@@ -6,6 +7,12 @@ const eventListElement = document.getElementById("eventList");
 const eventTitleElement = document.getElementById("eventTitle");
 const eventDescriptionElement = document.getElementById("eventDescription");
 
+/*Elementos de Departamento*/
+const cardAreaGas = document.getElementById("cardAreaGas");
+const infoGastronomia = document.getElementById("infoGastronomia");
+infoGastronomia.style.display = "none";
+
+/* Funciones del calendario */
 let currentDate = new Date();
 let selectedDate = null;
 
@@ -53,8 +60,23 @@ document.getElementById("nextBtn").addEventListener("click", () => {
 });
 
 renderCalendar();
+renderInfo();
 
 /* Footer */
 const currentYear = new Date().getFullYear();
 document.getElementById("current-year").textContent = currentYear;
+
+/* Funciones de Departamento */
+
+function showInfo(){
+    let info = document.createElement("div");
+    infoGastronomia.style.display = "flex";
+    info.innerHTML = "infoGastronomia";
+    document.appendChild(info);
+}
+
+function renderInfo(){
+    cardAreaGas.addEventListener("click", () => showInfo());
+}
+
 
