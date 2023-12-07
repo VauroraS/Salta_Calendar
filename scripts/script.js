@@ -56,4 +56,4 @@ renderCalendar();
 
 /* Footer */
 const currentYear = new Date().getFullYear();
-document.getElementById("current-year").textContent = currentYear;
+const footer = document.getElementById("current-year").textContent = currentYear;
