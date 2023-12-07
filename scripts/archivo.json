@@ -1,0 +1,13 @@
+{
+    "titulo": "Título de la página",
+    "parrafo": "La majestuosa Catedral de Nuestra Señora del Rosario, construida en el siglo XIX, es otra joya arquitectónica que adorna la plaza. Este imponente edificio ofrece a los visitantes una muestra de la rica herencia cultural y religiosa de Cafayate.",
+    "imagenes": [
+      {
+        "src": "../assets/Header.jpg",
+        "alt": "Descripción de la imagen 1",
+        "pie": "Pie de la imagen 1"
+      }
+    
+    ]
+  }
+  

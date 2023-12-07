@@ -1,0 +1,45 @@
+#contenidoReligion {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #557654;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #557654;
+  font-family: poppins;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #557654;
+  font-family: poppins;
+}
+
+.imagen-container {
+  margin-bottom: 20px;
+}
+
+figure {
+  margin: 0; /* Evita el espacio predeterminado alrededor de la figura */
+}
+
+img {
+  max-width: 50%; /* Ajusta la imagen al 100% del contenedor */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px; /* Espacio entre la imagen y el pie de la imagen */
+  
+}
+
