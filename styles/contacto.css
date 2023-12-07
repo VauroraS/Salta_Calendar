@@ -170,9 +170,7 @@ header h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: url("/assets/Header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #557654;
   color: white;
   text-align: center;
   padding: 10px;
