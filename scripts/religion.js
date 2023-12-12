@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var contenido = document.getElementById("contenidoReligion");
 
   // URL del archivo JSON
-  var jsonURL = "archivo.json";
+  var jsonURL = "../scripts/archivo.json";
 
   // Realizar una solicitud HTTP para obtener el JSON
   var xhr = new XMLHttpRequest();
