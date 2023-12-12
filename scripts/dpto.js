@@ -1,6 +1,8 @@
 // Bloques de informacion 
 const infoEcoturismo = document.getElementById("infoEcoturismo");
 const infoGastronomia = document.getElementById("infoGastronomia"); 
+const infoHistoria = document.getElementById("infoHistoria");
+const infoGaleria = document.getElementById("infoGaleria");
 
 // Cards de caracteristicas
 const cardAreaEco = document.getElementById("cardAreaEco");
@@ -23,6 +25,10 @@ function mostrarInfo(infoElement, cardAreaElement) {
   mostrarInfo(infoEcoturismo, cardAreaEco);
   
   mostrarInfo(infoGastronomia, cardAreaGas);
+
+  mostrarInfo(infoHistoria, cardAreaHist);
+
+  mostrarInfo(infoGaleria, cardAreaGal);
   
   //Falta hacer un json por informacion, no por dpto
   // Cada dpto tendria un id
