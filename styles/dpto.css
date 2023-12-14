@@ -5,7 +5,7 @@
 }
 
 h2{
-    margin: 50px 50px 10px 60px;
+    margin: 50px 50px 0px 60px;
     color: #557654;
 }
 .card{
@@ -37,6 +37,7 @@ iframe{
 }
 
 .template{
+    margin: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,11 +69,10 @@ iframe{
 }
 
 .card-conteiner {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
     width: 80%;
     height: auto;
 }
@@ -90,4 +90,14 @@ iframe{
 
 h4{
     color: #557654;
+}
+
+.area-info{
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    color: #557654;
+    gap: 20px;
+    font-size: 20px;
+    font-family: Poppins;
 }
