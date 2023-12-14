@@ -14,13 +14,17 @@ body {
   display: flex;
   flex-direction: column; /* Permite que el footer se quede en la parte inferior */
 }
-header {
+header{
   padding: 25px;
-  background-image: url("/assets/Header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 20vh; /* Ajusta la altura según tus necesidades */
+  background-color: #557654;
+  height: 70px; 
+}
+
+.logo{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-right: 150px;
 }
 header h1 {
   color: white;
@@ -33,11 +37,12 @@ header h1 {
   color: #fff;
   padding: 25px;
   display: flex;
-  justify-content: flex-end; /* Alinea los elementos en el extremo derecho */
+  justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
   flex-shrink: 0;
   list-style: none;
+  margin: 0;
 }
 
 .menu a {
@@ -49,7 +54,9 @@ header h1 {
 
 .menu a.active,
 .menu a:hover {
-  text-shadow: 0 0 4px;
+  text-shadow: 0 0 2px #57364E;
+  color: #57364E;
+  font-weight: 600;
 }
 
 .contacto {
