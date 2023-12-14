@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 eventItem.innerHTML = `
                 <h3>${event.Título}</h3>
                 <p>${event.Descripción}</p>
+                <p>${event.Hora}</p>
                 <div class="map-container">
                 <iframe src="${event['Link de mapa']}" width="400" height="300" frameborder="0" style="border: 1px solid #57364E; border-radius: 10px;" allowfullscreen></iframe>
                 </div>
