@@ -29,10 +29,11 @@
     <main>
       <div class="calendar">
         <div class="header">
-            <button id="prevBtn">&lt;</button>
             <h2 id="monthYear"></h2>
-            <button id="nextBtn">&gt;</button>
-             
+            <div>
+            <button id="prevBtn">&#9650;</button>
+            <button id="nextBtn">&#9660;</button>
+          </div>
         </div>
         <div id="daysOfWeek" class="days-of-week-container"></div>  
         <div id="daysContainer"></div>
@@ -40,84 +41,9 @@
       <div id="eventCard">
         <h2 id="eventDate"></h2>
         <div id="eventList"></div>
-        <button id="btnClose">X</button>
       </div> 
     </div>
-        <div class="formulario">
-            <form class="form">
-              <div class="form-element">
-                <div class="placeholder">Selecciona departamento</div>
-                <input type="text" id="departamento" list="departamentos" name="departamento" class="input">
-                <!--<span class="span">Por ejemplo: Capital</span>-->
-                
-                <datalist id="departamentos">
-                  <option value="Anta"></option>
-                  <option value="Cachi"></option>
-                  <option value="Cafayate"></option>
-                  <option value="Capital"></option>
-                  <option value="Cerrillos"></option>
-                  <option value="Chicoana"></option>
-                  <option value="General Güemes"></option>
-                  <option value="General José de San Martín"></option>
-                  <option value="Guachipas"></option>
-                  <option value="Iruya"></option>
-                  <option value="La Caldera"></option>
-                  <option value="La Candelaria"></option>
-                  <option value="La Poma"></option>
-                  <option value="La Viña"></option>
-                  <option value="Los Andes"></option>
-                  <option value="Metán"></option>
-                  <option value="Molinos"></option>
-                  <option value="Orán"></option>
-                  <option value="Rivadavia"></option>
-                  <option value="Rosario de la Frontera"></option>
-                  <option value="Rosario de Lerma"></option>
-                  <option value="San Carlos"></option>
-                  <option value="Santa Victoria"></option>
-                  <option value="Tartagal"></option>
-                </datalist>
-              </div>
-              <div class="form-element">
-                <div class="placeholder">Selecciona mes</div>
-                <input type="text" id="mes" list="meses" name="mes" class="input">
-                <!--<span class="span">Por ejemplo: Septiembre</span>-->
-                <datalist id="meses">
-                  <option value="Enero"></option>
-                  <option value="Febrero"></option>
-                  <option value="Marzo"></option>
-                  <option value="Abril"></option>
-                  <option value="Mayo"></option>
-                  <option value="Junio"></option>
-                  <option value="Julio"></option>
-                  <option value="Agosto"></option>
-                  <option value="Septiembre"></option>
-                  <option value="Octubre"></option>
-                  <option value="Noviembre"></option>
-                  <option value="Diciembre"></option>
-                </datalist>
-              </div>
-              <div class="form-element">
-                <div class="placeholder">Selecciona actividad</div>
-                <input type="text" id="actividad" list="actividades" name="actividad" class="input">
-                <!--<span class="span">Por ejemplo: Gastronomía</span>-->
-                <datalist id="actividades">
-                  <option value="Naturaleza"></option>
-                  <option value="Cultural"></option>
-                  <option value="Gastronomia"></option>
-                  <option value="Aventura"></option>
-                  <option value="Religion"></option>
-                  <option value="Relax y bienestar"></option>
-                  <option value="Compras/Artesanía"></option>
-                  <option value="Fotografía"></option>
-                  <option value="Enología"></option>
-                  <option value="Observación de estrellas"></option>
-                </datalist>
-              </div>
-            </form>
-            <button class="btn">Buscar</button>
-          </div>
-        
-        
+  
     </main>
 
     <!-- Pie de Pagina -->

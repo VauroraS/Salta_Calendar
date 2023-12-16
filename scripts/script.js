@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         const capitalizedMonth = selectedDate.toLocaleString('default', { month: 'long' }).charAt(0).toUpperCase() + selectedDate.toLocaleString('default', { month: 'long' }).slice(1);
         eventDateElement.textContent = `${capitalizedMonth} ${day}, ${currentDate.getFullYear()}`;
+        eventDateElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   
         try {
             const response = await fetch("eventos.json");
@@ -80,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 eventListElement.appendChild(eventItem);
             });
   
-            eventCard.style.display = "flex";
+           eventCard.style.display = "block";
         } catch (error) {
             console.error('Error al obtener eventos:', error);
         }
@@ -90,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         showEventCard(day);
     }
   
-    document.getElementById("btnClose").addEventListener("click", () => eventCard.style.display = "none");
+    // document.getElementById("btnClose").addEventListener("click", () => eventCard.style.display = "none");
   
     document.getElementById("prevBtn").addEventListener("click", () => {
         currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
