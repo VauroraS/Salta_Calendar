@@ -61,7 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
   
             const eventsForDate = data.eventos.filter(event => {
                 const eventDate = new Date(event.Fecha);
-                return eventDate.toDateString() === selectedDate.toDateString();
+                return (
+                    eventDate.getUTCFullYear() === selectedDate.getUTCFullYear() &&
+                    eventDate.getUTCMonth() === selectedDate.getUTCMonth() &&
+                    eventDate.getUTCDate() === selectedDate.getUTCDate()
+                );
+                
             });
   
             eventListElement.innerHTML = "";
