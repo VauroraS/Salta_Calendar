@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
 * {
     box-sizing: border-box;
     font-family: Poppins;
@@ -6,53 +7,73 @@
     padding: 0%;
 }
 
-.prueba {
-    padding: 0;
-    background-color: #557654;
-    height: 70px;
-}
-.logo{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-right: 150px;
-}
-/* Estilo para el menú CLASE DE CABECERA*/
-.menu {
-    color: #fff;
-    padding: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-shrink: 0;
-    list-style: none;
-    margin: 0;
-}
-.menu a {
-    color: #f6f1f1;
-    text-decoration: none;
-    font-size: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+@media only screen and (min-width: 437px) and (max-width: 600px){
 
-.menu a.active,
-.menu a:hover {
-    text-shadow: 0 0 2px #57364E;
-    color: #57364E;
-    font-weight: 600;
-}
+    header{
+        padding: 10px;
+        background-color: #557654;
+        height: 70px; 
+        width: 100%;     
+    }
+    
+    .logo{
+        display: flex;
+        gap: 5px; 
+        align-items: center;
+    }
+        /* Estilo para el menú */
+    .menu {
+        color: #fff;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        gap: 10px;
+        flex-shrink: 0;
+        list-style: none;
+        margin: 0;
+    }
+    .menu a {
+        color: #f6f1f1;
+        text-decoration: none;
+        font-size: 12px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+      
+    .menu a.active,
+    .menu a:hover {
+        text-shadow: 0 0 2px #57364E;
+        color: #57364E;
+        font-weight: 600;
+    }
 
+    h1{
+        font-size: 15px;
+    }
 
+    footer {
+  
+        background-color: #557654;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-top: 10%;
+        }
+      
 /*Contenido Principal*/
 .main-container {
     height: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
 }
+
 h2{
-    margin-top: 10px;
-    padding-left: 25px;
+    margin: 10px 10px;
+    color: #557654;
+    font-size: 20px;
 }
 
 .Contenedor {
@@ -65,39 +86,25 @@ h2{
 .Card-container {
     height: 300px; /* Establece una altura fija para las tarjetas */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
 .card {
-  /*  width: 460px;
-    height: 100%; Ocupa toda la altura del contenedor
+    position: relative;
+    width: 90%; 
+    height: 100%; 
     border-radius: 30px;
-    margin: 0 10px;
+    margin: 10px;
     overflow: hidden;
     border: 1px #557654 solid;
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
-    background-color: orange;*/
-
-        position: relative;
-        width: 460px; /* Ajusta el ancho deseado */
-        height: 100%; /* Ajusta la altura deseada */
-        border-radius: 30px;
-        margin: 0 10px;
-        overflow: hidden;
-        border: 1px #557654 solid;
-        display: inline-flex;
-        cursor: pointer;
-        background-color: orange;
-        transition: transform 0.3s ease-in-out;
-    
+    transition: transform 0.3s ease-in-out;
 }
 
-/*.card img {
-    width: 100%; Ajusta el tamaño máximo de la imagen 
-    height: 100%;
-}*/
 .card:hover {
     transform: scale(1.05); /* Efecto de escala al pasar el cursor sobre la tarjeta */
 }
@@ -134,13 +141,4 @@ h2{
     font-size: 1em;
     text-align: center;
 }
-/*Diseño del footer*/
-footer {
-
-    background-color: #557654;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 10%;
-    }
+}
