@@ -136,10 +136,12 @@ h2{
 }
 
 .overlay h3,
-.overlay p {
+.overlay p, .overlay a {
     margin: 0;
     font-size: 1em;
     text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
 }
 @media only screen and (min-width: 601px) and (max-width: 900px){
@@ -266,10 +268,12 @@ h2{
 }
 
 .overlay h3,
-.overlay p {
+.overlay p, .overlay a{
     margin: 0;
     font-size: 1em;
     text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
 
 }
@@ -404,10 +408,13 @@ h2{
 }
 
 .overlay h3,
-.overlay p {
+.overlay p, .overlay a {
     margin: 0;
     font-size: 1em;
     text-align: center;
+    text-decoration: none;
+    color: #fff;
+
 }
 
 }
