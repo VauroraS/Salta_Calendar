@@ -682,6 +682,12 @@ header{
 .day:hover {
     background-color:#57364E;
 }
+.has-events {
+    background-color: #ffcc00; 
+    color: white; 
+    font-weight: bold;
+    cursor: pointer;
+  }
  
 #eventCard{
     width: 100%;
