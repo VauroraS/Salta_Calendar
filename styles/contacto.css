@@ -137,6 +137,9 @@ header h1 {
     left: 50%;
     transform: translateX(-50%);
   }
+  .submit:hover {
+    background-color:#57364E;
+  }
   .info {
     padding: 50px;
   }
