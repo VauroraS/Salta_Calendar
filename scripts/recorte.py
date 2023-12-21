@@ -15,8 +15,8 @@ def recortar_enlace(link):
         # En caso de no encontrar una coincidencia, devolver None
         return None
 
-# Ejemplo de uso
-enlace = "https://drive.google.com/file/d/1_lAQ7Yba0O-XjITKsZNgGRtNL71DEpjz/view?usp=drive_link"
+print("Ingrese enlace:")
+enlace = input()
 parte_recortada = recortar_enlace(enlace)
 
 if parte_recortada:
