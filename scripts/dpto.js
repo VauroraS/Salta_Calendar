@@ -3,7 +3,8 @@ const infoEcoturismo = document.getElementById("infoEcoturismo");
 const infoGastronomia = document.getElementById("infoGastronomia"); 
 const infoHistoria = document.getElementById("infoHistoria");
 const infoGaleria = document.getElementById("infoGaleria");
-const  infoReligion = document.getElementById("infoReligion");
+const infoReligion = document.getElementById("infoReligion");
+const infoComoLlegar = document.getElementById("infoComoLlegar");
 
 // Cards de caracteristicas
 const cardAreaEco = document.getElementById("cardAreaEco");
@@ -31,18 +32,6 @@ function mostrarInfo(infoElement, cardAreaElement) {
 
   mostrarInfo(infoGaleria, cardAreaGal);
   
-  //Falta hacer un json por informacion, no por dpto
-  // Cada dpto tendria un id
-  
+  mostrarInfo(infoReligion, cardAreaRel);
 
-
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", jsonURL, true);
-  xhr.onreadystatechange = function(infoElement) {
-    if (xhr.readyState == 4 && xhr.status == 200) {
-      // Parsear el JSON
-      var data = JSON.parse(xhr.responseText);
-
-      
-    }
-  }
+  mostrarInfo(infoComoLlegar, cardAreaLle);

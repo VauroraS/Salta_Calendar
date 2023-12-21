@@ -599,7 +599,7 @@ header{
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-right: 150px;}
+    margin-right: 640px;}
  
 .menu {
     color: #fff;
@@ -909,5 +909,9 @@ h4{
     grid-template-columns: repeat(4, 0.1fr);
     margin: 30px 0px 30px 600px;
     gap: 50px;
+}
+
+.dpto h2{
+    margin-left: 100px;
 }
 }
